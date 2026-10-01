@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria Mamma Mia</title>
+    <!-- Enlazamos la hoja de estilos -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <main class="restaurant-container">
+        <h1>🍕 Sistema de Pedidos 🍕 <br> Pizzaria Mamma mia</h1>
+        <p class="subtitle">Simulación de cocina</p>
+
+        <!-- Botón para iniciar la simulación -->
+        <button id="btnIniciar" onclick="procesarOrdenRestaurante()">Iniciar Orden</button>
+
+        <!-- Sección donde se mostrarán los estados y el spinner -->
+        <div id="estado-container" class="estado-container hidden">
+            <div class="spinner"></div>
+            <p id="mensaje-estado">Preparando...</p>
+        </div>
+
+        <!-- Historial o lista de la orden -->
+        <ul id="lista-orden" class="lista-orden">
+            <!-- Los resultados se inyectarán aquí -->
+        </ul>
+
+        <div class="creditos">
+        <p>Sistema de pedidos hecho por <a href="https://github.com/tu-usuario" target="_blank">Sol Peraza</a></p>
+    </div>
+    </main>
+
+    <!-- Enlazamos el archivo de JavaScript -->
+    <script src="restaurant.js"></script>
+</body>
+</html>
