@@ -34,13 +34,13 @@ async function procesarOrdenRestaurante() {
         console.log("=== INICIO DE LA ORDEN ===");
 
         await prepararPlatillo("Bebida", 4000);
-        agregarItemLista("✔️ ¡Bebida está lista!", "success");
+        agregarItemLista("✔️ ¡Bebida está lista!🥤", "success");
 
         await prepararPlatillo("Pizza", 4000);
-        agregarItemLista("✔️ ¡Pizza está lista!", "success");
+        agregarItemLista("✔️ ¡Pizza está lista!🍕", "success");
 
         await prepararPlatillo("Postre", 4000);
-        agregarItemLista("✔️ ¡Postre está listo!", "success");
+        agregarItemLista("✔️ ¡Postre está listo!🍰", "success");
 
         // Ocultamos el spinner y mostramos mensaje de éxito final
         estadoContainer.classList.add("hidden");
